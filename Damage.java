@@ -2,7 +2,7 @@
 
 public class Damage
 {
-	private double randomDamage;
+	private double randomDamage;	//cannot be equal to 5
 	private double conditionalDamage;
 	
 	public Damage(double randomDamage, double conditionalDamage)
