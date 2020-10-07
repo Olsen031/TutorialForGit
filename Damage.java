@@ -19,6 +19,9 @@ public class Damage
 	public void setRandomDamage(double randomDamage)
 	{
 		this.randomDamage = randomDamage;
+		if (this.randomDamage){
+		
+		}
 	}
 	
 	public double getConditionalDamage()
@@ -28,12 +31,12 @@ public class Damage
 	
 	public void setConditionalDamage(double conditionalDamage)
 	{
-		this.conditionalDamage = conditionalDamage;
+		this.conditionalDamage = 0.5 * conditionalDamage;
 	}
 
 	public double calculateTotalDamage()
 	{
-		return randomDamage + conditionalDamage;
+		return randomDamage - conditionalDamage;
 	}
 
 }
